@@ -1,0 +1,233 @@
+
+body 
+{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*------body insert start--*/
+
+header 
+{
+    background-color: #851be7;
+}
+
+.navigation 
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.navigation a 
+{
+    margin: 0 15px;
+}
+
+a 
+{
+    text-decoration: none;
+    color: white;
+}
+.watch:hover 
+{
+    box-shadow: 2px 2px 30px blue;
+    background-color: rgb(236, 11, 41);
+    padding: 1em 1.5em;
+}
+
+.login:hover 
+{
+    transform: rotateY(180deg);
+    box-shadow: 1px 1px 20px rgb(221, 18, 211);
+    background-color: #860505;
+    transition: transform 2s;
+}
+
+.menu 
+{
+    padding: 10px 20px;
+}
+.front-page 
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: center;
+}
+
+
+.login
+{
+    background-color: #e61395;
+    padding: 10px 20px;
+    
+}
+.watch,
+.watch-now 
+{
+    background-color: rgb(224, 44, 68);
+    padding: 10px 20px;
+    border-radius:20px;
+}
+
+.fa-sign-in-alt 
+{
+    margin: 0 8px;
+}
+
+.banner img 
+{
+    width: 330px;
+}
+
+.title 
+{
+    color: white;
+}
+
+
+/*--header done--*/
+
+main 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container 
+{
+    margin-top: 55px;
+}
+
+.players-add 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player 
+{
+    width: 330px;
+    height: 474px;
+    margin: 15px;
+    padding: 15px;
+    padding-bottom: 43px;
+    box-shadow: 3px 3px 30px rgb(209, 207, 207);
+}
+
+.player img 
+{
+    width: 100%;
+}
+
+/**--------down part start----**/
+
+.highlights 
+{
+    display: flex;
+    margin: 150px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.highlights img 
+{
+    width: 600px;
+    height: 450px;
+}
+.info 
+{margin: 5%;
+width: 350px;}
+
+
+/**------extra part start----**/
+.sec3-exp
+{margin-bottom: 200px;}
+
+.divmaster1{display:flex;}
+.divmaster1 P{ color:#000000 }
+
+.divi3-iteam
+   {
+     box-shadow: 10px 12px 40px rgb(84, 85, 82);
+     width:40%;margin-left: 5%;margin-right: 5%;
+     padding:20px 20px;border-radius: 25px;
+   } 
+   .divi3-iteam img
+   {
+    width:100%;
+   }
+   #im1
+   {height:300px;border-radius: 15px;}
+   #im2
+   {height:300px; border-radius: 15px;}
+
+   .divi5
+   {text-align: center;}
+   #secure
+   {color:blue;}
+   #checkbox
+   {color:#2929f7;}
+
+
+
+
+/*-----------------------------
+        footer start
+     ------------------------ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 354px;
+    height: 110px;
+}
+
+.icon i {
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: rgb(201, 195, 195);
+    color: gray;
+}
+/*------------ start media query ----------*/
+
+@media only screen and (max-width: 480px)
+ {
+    .navigation {
+        background-color: #a82973;
+    }
+    .front-page {
+        display: flex;
+        flex-direction: column;
+    }
+    .players-add {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights {
+        display: flex;
+        flex-direction: column;
+    }
+    .divi3-iteam {
+        display: flex;
+        flex-direction: column;
+    }
+    .divi5 
+    {
+        display: flex;
+        flex-direction: column;}
+    footer 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
